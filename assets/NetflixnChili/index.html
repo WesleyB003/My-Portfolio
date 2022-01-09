@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Netflix'n Chili</title>
+</head>
+<body>
+    <header class="z-depth-5">
+        <h1>
+           <span class="t1">N</span>
+           <span class="t2">e</span> 
+           <span class="t3">t</span> 
+           <span class="t4">f</span> 
+           <span class="t5">l</span> 
+           <span class="t6">i</span> 
+           <span class="t7">x</span> 
+           <span class="t8">'</span> 
+           <span class="t9">n</span> 
+           <br> 
+           <span class="t10">C</span>
+           <span class="t11">h</span>
+           <span class="t12">i</span>
+           <span class="t13">l</span>
+           <span class="t14">i 🌶️</span>  
+        </h1>
+       
+    </header>
+    <main>
+        <div class="container box">
+            <div class="row">
+                <h2>Search for a Movie, Get a Recipe</h2>
+                <form class="col s12 col m6">
+                    <div class="card black z-depth-5 input-field col s12 col m6 border-radius">
+                        <label for="search"><i class="material-icons">search</i> Search</label>
+                        <input id="search" type="text" class="validate utilitywhite" /> 
+                        <button class="waves-effect waves-light btn-large greenbtn" href="#modal1" id="submit-button">Search</button>
+                    </div>
+                </form>
+                
+                <section id="movie-parent" class="col s12 col m6 card black z-depth-5 border-radius center">
+                    <h2 id="movie-title">Movie Title:<span></span> <img id="movie-poster"> </h2>
+                    <p><span id="movie-cover"></span></p>
+                
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col s12 col m6">
+                    <div id="pastRecipeContainer" class="card black z-depth-5 col s12 col m6 border-radius hidden">
+                        <h3>Past Recipes</h3>
+                        <ul id="past-recipe">
+                            <li><a></a></li>
+                        </ul>
+                        <button class="recipeClear" id="clearpastrecipes">Clear Past Recipes</button>
+                    </div>
+                </section>
+
+                <section class="col s12 col m6 card black z-depth-5 border-radius">
+                    <button class="pepper" id="pepperBtn"> 🌶️ <span class="peppertext">Click Me, Get a Random Recipe</span> 🌶️ </button>
+                    <h2 id="recipe-title-parent"><span id="recipe-title"></span></h2>
+                    <ul>
+                        <li id="image"><img class="border-radius" id="recipe-image"></li>
+                        <li id="link-list"><a class="hidden" id="recipe-link">Click Here For Full Recipe</a></li>
+                        <li id="recipe-list">Directions: <p id="recipe-directions"></p></li>                 
+                    </ul>
+                </section> 
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/materialize.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/lodash.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
